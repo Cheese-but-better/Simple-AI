@@ -1,6 +1,7 @@
+package src;
 import java.util.Random;
 
-public class trainthree {
+public class AI {
 
   public static Random rand = new Random();
 
@@ -113,6 +114,7 @@ public class trainthree {
 
   public static void printboard() {
     System.out.println("\033[H\033[2J");
+    System.out.flush();
     for (int i = 0; i < board.length; i++) {
       for (int j = 0; j < board[i].length; j++) {
         board[i][j] = "-";
